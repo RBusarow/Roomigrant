@@ -33,22 +33,22 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:_'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:_"
 
     // room
-    implementation 'androidx.room:room-runtime:2.2.5'
-    androidTestImplementation 'androidx.room:room-testing:2.2.5'
-    kapt 'androidx.room:room-compiler:2.2.5'
+    implementation 'androidx.room:room-runtime:_'
+    androidTestImplementation 'androidx.room:room-testing:_'
+    kapt 'androidx.room:room-compiler:_'
 
     // roomigrant
     compileOnly project(':RoomigrantLib')
     kapt project(':RoomigrantCompiler')
 
     // testing
-    testImplementation 'androidx.test:core:1.2.0'
-    testImplementation 'androidx.test.ext:junit:1.1.1'
-    testImplementation 'junit:junit:4.13'
-    androidTestImplementation 'androidx.test:runner:1.2.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    testImplementation 'androidx.test:core:_'
+    testImplementation 'androidx.test.ext:junit:_'
+    testImplementation 'junit:junit:_'
+    androidTestImplementation 'androidx.test:runner:_'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:_'
 }

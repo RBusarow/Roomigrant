@@ -8,5 +8,5 @@ targetCompatibility = "1.7"
 group = 'com.github.MatrixDev'
 
 dependencies {
-    compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk7:_"
 }
