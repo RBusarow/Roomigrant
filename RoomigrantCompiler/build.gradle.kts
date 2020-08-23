@@ -18,6 +18,6 @@ dependencies {
     kapt("com.squareup.moshi:moshi-kotlin-codegen:_")
 
     compileOnly("com.google.auto.service:auto-service:_")
-    compileOnly("net.ltgt.gradle.incap:incap:0.3")
-    kapt("net.ltgt.gradle.incap:incap-processor:0.3")
+    compileOnly("net.ltgt.gradle.incap:incap:_")
+    kapt("net.ltgt.gradle.incap:incap-processor:_")
 }
