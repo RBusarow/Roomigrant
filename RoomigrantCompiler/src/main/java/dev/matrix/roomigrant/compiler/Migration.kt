@@ -67,6 +67,12 @@ class Migration(
             createTableIndices(tableDiff.table2)
         }
 
+        val pendingTableRename = diff.changedTables.any { it.fieldsDiff.wasChanged || it.nameChanged }
+
+        if (pendingTableRename) {
+            execSql("PRAGMA legacy_alter_table=ON;")
+        }
+
         for (tableDiff in diff.changedTables) {
             val table1 = tableDiff.table1
             val table2 = tableDiff.table2
@@ -86,6 +92,7 @@ class Migration(
                     execSql(sb.toString())
                 }
             } else if (tableDiff.fieldsDiff.wasChanged) {
+
                 val tableMerge = Table(table2, table2.name + mergeTableSuffix)
                 createTable(tableMerge)
 
